@@ -32,9 +32,10 @@ function App() {
   };
 
   const updateTask = (objediTask) => {
+    //recibe info del input de guardar y la actualiza en el listado de tareas
     const { id, tarea } = objediTask;
     const arr = [...listaTareas];
-    const elemento = arr.find((item) => item === id);
+    const elemento = arr.find((item) => item.id === id);
     elemento.tarea = tarea;
     setListaTareas(arr);
   };

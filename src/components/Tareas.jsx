@@ -12,7 +12,7 @@ export const Tareas = (props) => {
       setValor(texto);
     };
     const handleClick = (e) => {
-      e.preventDefault;
+      e.preventDefault();
       updateTask({
         id: tarea.id,
         tarea: valor,
